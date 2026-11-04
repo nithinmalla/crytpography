@@ -1,0 +1,2 @@
+import java.util.Scanner;
+public class Totient { static long gcd(long a,long b){while(b!=0){long r=a%b;a=b;b=r;}return Math.abs(a);} public static void main(String[] args){Scanner sc=new Scanner(System.in);System.out.print("Enter n: ");int n=sc.nextInt();if(n<1){System.out.println("n must be positive.");return;}int c=0;for(int i=1;i<n;i++)if(gcd(n,i)==1)c++;System.out.println("Euler totient: "+c);}}

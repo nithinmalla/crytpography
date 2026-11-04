@@ -1,0 +1,2 @@
+import java.util.Scanner;
+public class CaesarBruteForce {public static void main(String[]z){Scanner sc=new Scanner(System.in);System.out.print("Enter cipher text (A-Z): ");String s=sc.nextLine().toUpperCase();for(int k=0;k<26;k++){StringBuilder p=new StringBuilder();for(char c:s.toCharArray())p.append(c>='A'&&c<='Z'?(char)('A'+Math.floorMod(c-'A'-k,26)):c);System.out.println("Plain text: "+p+", key: "+k);}}}

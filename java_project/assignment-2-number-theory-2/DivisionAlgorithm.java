@@ -1,0 +1,2 @@
+import java.util.Scanner;
+public class DivisionAlgorithm { public static void main(String[] args){Scanner sc=new Scanner(System.in);System.out.print("Enter the dividend: ");int x=sc.nextInt();System.out.print("Enter the divisor: ");int y=sc.nextInt();if(y==0){System.out.println("Divisor cannot be zero.");return;}System.out.println("Quotient is: "+(x/y));System.out.println("Remainder is: "+(x%y));}}

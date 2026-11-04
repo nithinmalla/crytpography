@@ -1,0 +1,2 @@
+import java.util.Scanner;
+public class CaesarEncrypt {public static void main(String[]z){Scanner sc=new Scanner(System.in);System.out.print("Enter plain text: ");String s=sc.nextLine();System.out.print("Enter key: ");int k=sc.nextInt();StringBuilder o=new StringBuilder();for(char c:s.toCharArray())o.append(c>='a'&&c<='z'?(char)('A'+Math.floorMod(c-'a'+k,26)):c);System.out.println("Cipher text: "+o);}}
